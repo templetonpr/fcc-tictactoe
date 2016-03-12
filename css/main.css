@@ -1,0 +1,70 @@
+#board {
+  position: fixed;
+  top: 10%;
+  display: none;
+}
+
+td {
+  height: 100px;
+  width: 100px;
+  margin: 1px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.square {
+  font-size: 50px;
+}
+
+.score {
+  font-size: 25px;
+  border: none;
+}
+
+.score > button {
+  height: 40%;
+}
+
+#dialog {
+  position: fixed;
+  top: 20%;
+  border: 1px solid black;
+  width: 315px;
+  height: 120px;
+  text-align: center;
+}
+
+#dialog > button {
+  padding: 10px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 320px) {
+  /* tiny screen */
+  #board {
+    left: 2%;
+  }
+  #dialog {
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* small screen */
+  #board {
+    left: 10%;
+  }
+  #dialog {
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  /* big screen */
+  #board {
+    left: 30%;
+  }
+  #dialog {
+    left: 30%;
+  }
+}
